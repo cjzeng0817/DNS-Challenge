@@ -19,10 +19,10 @@ echo "Download: $BLOB"
 curl -s -I "$URL"
 
 # Actually download the archive - UNCOMMENT it when ready to download
-# curl "$URL" -o "$BLOB"
+curl "$URL" -o "$BLOB"
 
 # Same as above, but using wget
-# wget "$URL" -O "$BLOB"
+wget "$URL" -O "$BLOB"
 
 # Same, + unpack files on the fly
-# curl "$URL" | tar -f - -x -j
+curl "$URL" | tar -f - -x -j
